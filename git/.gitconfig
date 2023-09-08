@@ -1,0 +1,25 @@
+[user]
+	name = Makarios Christakis
+	email = ${EMAIL}
+	signingKey = ${GPG_SIGNING_KEY_ID}
+[core]
+	autocrlf = false
+	editor = vim -c 'set colorcolumn=72'
+[commit]
+	gpgSign = true
+[alias]
+	mylog = log --decorate --oneline --graph
+	squashlog = log --no-merges --no-decorate --oneline
+
+## Use VS Code as mergetool provider
+#[merge]
+#	tool = code
+#
+#[mergetool "code"]
+#	cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+#
+#[diff]
+#	tool = code
+#
+#[difftool "code"]
+#	cmd = code --wait --diff $LOCAL $REMOTE
